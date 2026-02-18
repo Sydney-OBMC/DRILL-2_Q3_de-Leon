@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+     .body{
+    display: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    background-color: white;
+    height: 100vh;
+
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: center;
+    }
+
+    .container{
+    background-color: #eb8898;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h3{
+  padding-bottom: 20px;
+}
+    .title{
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fab4c0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+    }
+
+#resultBox {
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #888;
+    background-color: #fefefe;
+    margin: 15px auto; /* Centers the box on the page */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+  </style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css " rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <p>My Calculator</p>
+        </div>
+
+    <br>
+    <br>
+
+     <form action="/submit_page" method="POST">
+        <label for="First number">Enter first number:</label><br>
+        <input type="text" id="First number" name="First number">
+        <br>
+
+        <br>
+
+        <label for="Second number">Enter Second number:</label><br>
+        <input type="text" id="Second number" name="Second number">
+        <br>
+
+        <br>
+
+        <label for="Operation">Select operation:</label><br>
+            <select name="Operations" id="Operation">
+                <option value="Addition">Addition</option>
+                <option value="Subtraction">Subtraction</option>
+                <option value="Multiplication">Multiplication</option>
+                <option value="Division" >Division</option>
+            </select>
+        
+        <div id="resultBox">
+            <p>This is the result content.</p>
+        </div>
+
+        <br>
+
+
+    </form>
+
+    <div>
+
+    </div>
+</div>
+</body>
+
+</html>
